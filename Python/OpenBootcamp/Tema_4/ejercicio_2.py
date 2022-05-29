@@ -2,7 +2,7 @@
 
 numero_inicial: int = int(input('Introduce un numero: '))
 numero_final: int = int(input('Introduce otro numero: '))
-numeros_impares: [int] = []
+numeros_impares: (int) = []
 
 # Mientras el número final sea menor al número inicial pedira que el segundo número sea mayor al primero.
 
