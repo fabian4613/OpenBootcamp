@@ -10,10 +10,12 @@ def triangulo(altura,base):
     operacion1 = (altura+base)/2
     return round(operacion1)
 
-#A partir de aqui, uso math
-print('El area del triangulo es:',(triangulo(altura,base)))
 
-print("Cual es el radio del circulo?")
-r = float(input())
-a = math.pi * (r * r)
-print("El area del circulo con radio de",r, "es:",round(a, 2))
+print(f'El area del triangulo es:',(triangulo(altura,base)))
+
+#A partir de aqui, uso math
+
+def area_circulo(radio: float) -> float:
+    return (math.pi*(radio**2))
+
+print(f"Área del círculo: {area_circulo(4)}")
